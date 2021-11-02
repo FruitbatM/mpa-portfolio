@@ -4,7 +4,8 @@
 body {
     font-family: 'Oswald', sans-serif;
 }
- * {
+
+* {
     box-sizing: border-box;
 }
 
@@ -31,7 +32,7 @@ h1 {
     font-size: 20vh;
     line-height: 1;
     color: #e2e2e2;
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 h2 {
@@ -66,15 +67,17 @@ nav ul {
 }
 nav ul li {
      color: white;
-     font-size: 15vh;
+     font-size: 12vh;
      text-transform: uppercase;
      overflow: hidden;
      font-weight: 700;
 }
+
 nav ul li:first-child {
      font-size: 8vh;
      overflow: visible;
 }
+
 @media (max-width: 750px) {
      nav ul li {
          font-size: 15vw;
@@ -129,11 +132,13 @@ nav a:hover {
     -webkit-transition:.3s;
     transition:.3s;
     text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 0.2rem;
 }
 .social a:hover {
      color:#F24738;
 }
-.fa {
+.fas {
      color: #484848;
      padding-right: 12px;
      font-size: 1.8em !important;
@@ -149,6 +154,7 @@ nav a:hover {
 
 /* Media Queries */
 /* For devices larger than 400px */
+
 @media (min-width: 400px) {
     .container {
         width: 85%;
@@ -160,4 +166,41 @@ nav a:hover {
     .container {
         width: 80%;
    }
+}
+
+/* Display on tablet devices */  
+@media only screen 
+  and (min-width : 768px) 
+  and (max-width : 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+
+/* Display on large devices */
+@media screen 
+  and (min-width: 1024px) {
+
+}
+
+/* For iPad Pro 12.9" 
+Credit: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/#top-of-site
+Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2)  {
+
+
+}
+
+/* iPhone 5 only (portrait mode)
+resource: https://coderwall.com/p/mwvbea/media-queries-only-for-the-iphone-5-part-i */ 
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 568px)
+  and (-webkit-device-pixel-ratio: 2) 
+  and (min-aspect-ratio: 40/71) and (orientation:portrait) {
+
 }
