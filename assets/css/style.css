@@ -3,6 +3,7 @@
 /* Base Styles */
 body {
     font-family: 'Oswald', sans-serif;
+    background-color: #0a192f;
 }
 
 * {
@@ -24,23 +25,31 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 2rem;
     font-weight: 700;
-    text-transform: uppercase;
+    color: #e2e2e2;
 }
 
 h1 {
-    text-transform: uppercase;
     font-size: 20vh;
     line-height: 1;
-    color: #e2e2e2;
     margin-top: 6.25rem;
 }
 
 h2 {
-    font-size: 4rem;
+    line-height: 1;
+    font-size: 5rem;
+    margin-top: 6.25rem;
 }
 
-p {
+h3 {
+    line-height: 1;
+    font-size: 4rem;
+    margin-top: 1.5rem;
+}
+
+h5 {
     margin-top: 0;
+    color: #e2e2e2;
+    line-height: 1.5;
 }
 
 /* Clearing */
@@ -66,7 +75,7 @@ nav ul {
      padding: 0;
 }
 nav ul li {
-     color: white;
+     color: #fafafa;
      font-size: 12vh;
      text-transform: uppercase;
      overflow: hidden;
@@ -88,7 +97,7 @@ nav ul li:first-child {
 }
 
 nav a {
-    color: white;
+    color: #fafafa;
     -o-transition:.3s;
     -ms-transition:.3s;
     -moz-transition:.3s;
@@ -125,7 +134,7 @@ nav a:hover {
 
 .social a {
     color: #484848;
-    color: white;
+    color: #fafafa;
     -o-transition:.3s;
     -ms-transition:.3s;
     -moz-transition:.3s;
@@ -139,7 +148,7 @@ nav a:hover {
      color:#F24738;
 }
 .fas {
-     color: #484848;
+     color: #e2e2e2;
      padding-right: 12px;
      font-size: 1.8em !important;
      -o-transition:.3s;
@@ -150,6 +159,65 @@ nav a:hover {
 }
 .fa:hover {
     color:#F24738;
+}
+
+/* Social media - left */
+.orientation-left {
+    position: fixed;
+    font-size: 1.4rem;
+    bottom: 0px;
+}
+
+#social-desktop {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    left: 20px;
+    right: auto;
+}
+
+#social-desktop li a {
+    color: #8892b0;
+}
+
+#social-desktop::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 5px;
+    background-color: slategray;
+}
+
+/* Email - right */
+#email-desktop {
+    display: flex;
+    flex-direction: column;
+    float: right;
+
+}
+
+#email-desktop a {
+    margin: 20px auto;
+    padding: 10px;
+    font-family: monospace;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+#email-desktop::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: slategray;
 }
 
 /* Media Queries */
