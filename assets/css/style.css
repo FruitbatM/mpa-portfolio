@@ -52,6 +52,11 @@ h5 {
     line-height: 1.5;
 }
 
+section {
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
 /* Clearing */
 .container:after {
      content: "";
@@ -209,6 +214,7 @@ nav a:hover {
     letter-spacing: 0.1em;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    color: #8892b0;
 }
 
 #email-desktop::after {
@@ -218,6 +224,48 @@ nav a:hover {
     height: 90px;
     margin: 0px auto;
     background-color: slategray;
+}
+
+.section-heading {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: slategray;
+}
+
+.inner-text {
+    color: #e2e2e2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.skills-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
 }
 
 /* Media Queries */
