@@ -338,7 +338,7 @@ nav a:hover {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #f45b69 transparent transparent;
+  border-color: transparent #6c757d transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -348,7 +348,7 @@ nav a:hover {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #f45b69;
+  border-color: transparent transparent transparent #6c757d;
 }
 
 time {
@@ -358,16 +358,25 @@ time {
   margin-bottom: 8px;
 }
 
+.position {
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.9rem;
+}
 
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.company {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+}
+
+/* Effects */
 
 .timeline ul li::after {
   transition: background 0.5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
-  background: #f45b69;
+  background: #6c757d;
 }
 
 .timeline ul li div {
@@ -422,8 +431,7 @@ time {
 }
 
 
-/* EXTRA/CLIP PATH STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Extra / clip path styles */
 .timeline-clippy ul li::after {
   width: 40px;
   height: 40px;

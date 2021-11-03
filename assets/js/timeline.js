@@ -1,4 +1,3 @@
-// Timeline
 (function () {
     "use strict";
   
