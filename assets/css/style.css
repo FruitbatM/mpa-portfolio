@@ -3,7 +3,7 @@
 /* Base Styles */
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: rgb(45, 55, 70);
+    background-color: #2d385f;
 }
 
 a {
@@ -17,7 +17,7 @@ a {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
@@ -244,19 +244,20 @@ button:focus {
 }
 
 #social-desktop {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: flex-start;
-    margin: 0px;
-    padding: 0px;
+    position:fixed;
+    top:300px;
+    left: 0;
     list-style: none;
-    left: 20px;
-    right: auto;
+    font-size: 20px;
 }
 
-#social-desktop li a {
+#social-desktop a {
     color: #8892b0;
+}
+
+#social-desktop a:hover, #social-desktop a:focus {
+    transform: translateY(-3px);
+    color: #42caca;
 }
 
 #social-desktop::after {
@@ -268,28 +269,27 @@ button:focus {
     background-color: slategray;
 }
 
-.overlay-wrapper p {
-    font-size:1.3em;
-    line-height:1.5em
-}
-
 /* Email - right */
 #email-desktop {
-    display: flex;
-    flex-direction: column;
-    float: right;
-
+    position:fixed;
+    right:0;
+    top:250px;
+    padding-right: 20px;
 }
 
 #email-desktop a {
-    margin: 20px auto;
+    margin: 25px auto;
     padding: 10px;
     font-family: monospace;
-    line-height: 18px;
     letter-spacing: 0.1em;
+    font-size: 13px;
     writing-mode: vertical-rl;
-    text-orientation: mixed;
     color: #8892b0;
+}
+
+#email-desktop a:hover, #email-desktop a:focus {
+    transform: translateY(-3px);
+    color: #42caca;
 }
 
 #email-desktop::after {
@@ -318,8 +318,8 @@ button:focus {
     position: relative;
     top: -5px;
     width: 300px;
-    height: 1px;
-    margin-left: 20px;
+    height: 0.075rem;
+    margin-left: 1.25rem;
     background-color: slategray;
 }
 
@@ -387,7 +387,7 @@ button:focus {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #6c757d;
+  background: #6da6b2;
   opacity: .85;
 }
 
@@ -407,7 +407,7 @@ button:focus {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #6c757d transparent transparent;
+  border-color: transparent #6da6b2 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -417,7 +417,7 @@ button:focus {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #6c757d;
+  border-color: transparent transparent transparent #6da6b2;
 }
 
 time {
@@ -445,7 +445,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #6c757d;
+  background: #fff;
 }
 
 .timeline ul li div {
