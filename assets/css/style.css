@@ -178,7 +178,6 @@ button:focus {
 }
 
 .overlay ul li {
-	vertical-align: middle;
 	display: block;
 	position: relative;
 	opacity: 0;
@@ -469,8 +468,7 @@ time {
 }
 
 
-/* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* GENERAL MEDIA QUERIES - timeline */
 
 @media screen and (max-width: 900px) {
   .timeline ul li div {
@@ -557,6 +555,112 @@ time {
   }
 }
 
+/* Projects section */
+.project-screenshots {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 95%;
+    margin-left: 0.625rem;
+}
+
+.project-screenshots .img-lg {
+    width: 70%;
+    left: 0;
+    z-index: 1;
+}
+
+.project-screenshots .img-md {
+    width: 27%;
+    right: 14%;
+    z-index: 2;
+}
+
+.project-screenshots .img-sm {
+    width: 15%;
+    right: 1rem;
+    z-index: 3;
+    box-sizing: 0 5px 5px 0 rgb(0 0 0 / 75%);
+}
+
+.description-title-container {
+    position: relative;
+    width: 90%;
+    margin-top: 1.875rem;
+    margin-left: 1em;
+    align-items: baseline;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: stretch;
+}
+
+.description-title {
+    flex: 1;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem !important;
+}
+
+.description-buttons a {
+    margin: 0 5px;
+    border: 2px solid #00b7c7;
+    color: #00b7c7;
+    font-weight: 500;
+}
+
+.description-buttons a:hover {
+    background: #00b7c7;
+    color: #f2f2f2;
+    border-color: #00b7c7;
+}
+
+.project-description {
+    display: block;
+    width: 90%;
+    margin-top: 0.938rem;
+    margin-left: 1rem;
+    margin-bottom: 1.563rem;
+    font-size: 1.1em;
+    color: #fafafa;
+    font-family: 'Oswald';
+}
+
+.used-skills {
+    display: block;
+    width: 90%;
+    font-family: Gotham, Helvetica, Arial, sans-serif;
+    margin-top: 1.875rem;
+    margin-bottom: 6.25rem;
+}
+
+.used-items {
+    margin-left: 1em;
+    padding: 0;
+    list-style: none;
+}
+
+.used-item {
+    display: inline-block;
+    padding: 7px 7px 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: #fafafa;
+    background: #333;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.divider {
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #00b7c7;
+    margin-left: 1em;
+}
+
 /* Back to top arrow - code with small modification taken from: 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #arrow_2top {
@@ -567,8 +671,8 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   border: none;
   outline: none;
   background-color: transparent;
-  color: #f23332;
-  opacity: 0.4;
+  color: #707992;
+  opacity: 0.5;
   cursor: pointer; /* Add a mouse pointer on hover */
 }
 
