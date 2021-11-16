@@ -339,7 +339,7 @@ button:focus {
 .skills-list li::before {
     content: "▹";
     position: absolute;
-    left: 0px;
+    left: 20px;
 }
 
 /* Experience section */
