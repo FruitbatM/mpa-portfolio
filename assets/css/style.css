@@ -55,7 +55,7 @@ h5 {
 
 section {
     margin: 0px auto;
-    padding: 50px 70px;
+    padding: 0;
 }
 
 /* Clearing */
@@ -708,6 +708,14 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 /* Display on large devices */
 @media screen 
   and (min-width: 1024px) {
+
+    section {
+      padding: 50px 70px;
+    }
+
+    #contact-section {
+      padding: 0 70px;
+    }
 
 }
 
