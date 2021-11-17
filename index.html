@@ -167,11 +167,11 @@
             </div>
             <div class="container">
                 <div class="row projects-row">
-                    <div class="col-lg-12 col-md-6">
+                    <div class="col-12">
                         <div class="project-screenshots">
                             <img class="img-lg img-fluid" src="assets/images/tra_desktop.jpg" alt="desktop website screenshot">
-                            <img class="img-md img-fluid" src="assets/images/tra_tablet.jpg" alt="tablet website screenshot">
-                            <img class="img-sm img-fluid" src="assets/images/tra_mobile.jpg" alt="mobile website screenshot">
+                            <img class="img-md img-fluid d-none d-md-block" src="assets/images/tra_tablet.jpg" alt="tablet website screenshot">
+                            <img class="img-sm img-fluid d-none d-md-block" src="assets/images/tra_mobile.jpg" alt="mobile website screenshot">
                         </div>
                         <div class="description-title-container">
                             <h2 class="description-title text-uppercase">Trail Run Adventures</h2>
@@ -201,11 +201,11 @@
                 </div>
                 <span class="divider"></span>
                 <div class="row projects-row">
-                    <div class="col-lg-12 col-md-6">
+                    <div class="col-12">
                         <div class="project-screenshots">
-                            <img class="img-lg img-fluid" src="assets/images/bcare_desktop.jpg" alt="desktop website screenshot">
-                            <img class="img-md img-fluid" src="assets/images/bcare_tablet.jpg" alt="tablet website screenshot">
-                            <img class="img-sm img-fluid" src="assets/images/bcare_mobile.jpg" alt="mobile website screenshot">
+                            <img class="img-lg img-fluid " src="assets/images/bcare_desktop.jpg" alt="desktop website screenshot">
+                            <img class="img-md img-fluid d-none d-md-block" src="assets/images/bcare_tablet.jpg" alt="tablet website screenshot">
+                            <img class="img-sm img-fluid d-none d-md-block" src="assets/images/bcare_mobile.jpg" alt="mobile website screenshot">
                         </div>
                         <div class="description-title-container">
                             <h2 class="description-title text-uppercase">B-Care</h2>
@@ -236,8 +236,8 @@
                     <div class="col-12">
                         <div class="project-screenshots">
                             <img class="img-lg img-fluid" src="assets/images/airmed_desktop.jpg" alt="desktop screenshot">
-                            <img class="img-md img-fluid" src="assets/images/airmed_tablet.jpg" alt="tablet screenshot">
-                            <img class="img-sm img-fluid" src="assets/images/airmed_mobile.jpg" alt="mobile screenshot">
+                            <img class="img-md img-fluid d-none d-md-block" src="assets/images/airmed_tablet.jpg" alt="tablet screenshot">
+                            <img class="img-sm img-fluid d-none d-md-block" src="assets/images/airmed_mobile.jpg" alt="mobile screenshot">
                         </div>
                         <div class="description-title-container">
                             <h2 class="description-title text-uppercase">AIRMED</h2>
@@ -269,8 +269,8 @@
                     <div class="col-12">
                         <div class="project-screenshots">
                             <img class="img-lg img-fluid" src="assets/images/jap_desktop.jpg" alt="desktop screenshot">
-                            <img class="img-md img-fluid" src="assets/images/jap_tablet.jpg" alt="tablet screenshot">
-                            <img class="img-sm img-fluid" src="assets/images/jap_mobile.jpg" alt="mobile screenshot">
+                            <img class="img-md img-fluid d-none d-md-block" src="assets/images/jap_tablet.jpg" alt="tablet screenshot">
+                            <img class="img-sm img-fluid d-sm-none d-md-block" src="assets/images/jap_mobile.jpg" alt="mobile screenshot">
                         </div>
                         <div class="description-title-container">
                             <h2 class="description-title text-uppercase">Explore National Parks of Japan</h2>
@@ -299,8 +299,8 @@
                     <div class="col-12">
                         <div class="project-screenshots">
                             <img class="img-lg img-fluid" src="assets/images/amaris_desktop.jpg" alt="desktop screenshot">
-                            <img class="img-md img-fluid" src="assets/images/amaris_tablet.jpg" alt="tablet screenshot">
-                            <img class="img-sm img-fluid" src="assets/images/amaris_mobile.jpg" alt="mobile screenshot">
+                            <img class="img-md img-fluid d-none d-md-block" src="assets/images/amaris_tablet.jpg" alt="tablet screenshot">
+                            <img class="img-sm img-fluid d-none d-md-block" src="assets/images/amaris_mobile.jpg" alt="mobile screenshot">
                         </div>
                         <div class="description-title-container">
                             <h2 class="description-title text-uppercase">Amaris Chocolate</h2>
@@ -329,7 +329,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="section-heading">Contact</h2>
+                        <h2 class="section-heading">Get In Touch</h2>
+                    </div>
+                    <p class="contact-description text-center text-white">
+                        Have a sweet project in mind or just want to say hi? <br>
+                        Feel free to send me a message!
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12 justify-content-center">
+                        <div class="contact-wrapper">
+                            <form id="contactForm" class="getInTouch-form" onsubmit="return sendMail(this);">
+                                <input type="text" name="name" id="fullname" class="form-control" placeholder="Your Full Name" required>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
+                                <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                <textarea class="form-control" name="message" id="message" rows="7" placeholder="Message" 
+                                    required></textarea>
+                                <div class="form-button">
+                                    <button type="submit" class="btn-contact mt-4" aria-label="Submit the contact form">Send</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

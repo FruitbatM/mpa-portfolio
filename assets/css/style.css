@@ -571,7 +571,9 @@ time {
 }
 
 .project-screenshots .img-lg {
-    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     left: 0;
     z-index: 1;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 75%);
@@ -675,6 +677,31 @@ time {
     margin-left: 1.5em;
 }
 
+/*Contact*/
+.btn-contact {
+  background-color: #00b7c7 !important;
+  color: #ffffff;
+  border: none;
+  display: block;
+  text-align: center;
+  line-height: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.8rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+.btn-contact:hover,
+.btn-contact:focus,
+.btn-contact:active {
+  background-color: #00b7c7 !important;
+  border-color: #00b7c7 !important;
+  border: 0.12rem solid;
+}
+
+
 /* Back to top arrow - code with small modification taken from: 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #arrow_2top {
@@ -712,6 +739,12 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
     section {
       padding: 50px 70px;
     }
+
+    .project-screenshots .img-lg {
+      margin-right: 0;
+      margin-left: 0;
+      width: 70%;
+  }
 
     #contact-section {
       padding: 0 70px;
