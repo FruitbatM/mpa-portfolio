@@ -337,6 +337,41 @@ button:focus {
     list-style: none;
 }
 
+/* Skills section */
+/* Accordion without border credit: https://www.bootdey.com/snippets/view/accordion-without-border#html*/
+
+.accordion-style .card {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 15px;
+  margin-top: 0 !important;
+  border: none;
+}
+
+.accordion-style .card-header {
+  border: 0;
+  background: none;
+  padding: 0;
+  border-bottom: none;
+}
+
+.accordion-style .card-body {
+  padding-top: 0px;
+  padding-left: 3.5rem;
+  padding-bottom: 0;
+}
+
+.skills-icon {
+  margin-right: 1rem;
+}
+
+/*
+#accordion-list {
+  margin-right: 2rem !important;
+}
+*/
+
 /*
 .skills-list li::before {
     content: "▹";
