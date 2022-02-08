@@ -1,33 +1,19 @@
-(function () {
-    "use strict";
-  
-    // define variables
-    let items = document.querySelectorAll(".timeline li");
-  
-    // check if an element is in viewport
-    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-    function isElementInViewport(el) {
-      let rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
-  
-    function callbackFunc() {
-      for (var i = 0; i < items.length; i++) {
-        if (isElementInViewport(items[i])) {
-          items[i].classList.add("in-view");
-        }
-      }
-    }
-  
-    // listen for events
-    window.addEventListener("load", callbackFunc);
-    window.addEventListener("resize", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
-  })();
-  
+jQuery(document).ready(function($){
+	let $timelineBlocks = $('.timeline-block');
+
+	//hide timeline blocks which are outside the viewport
+	$timelineBlocks.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).find('.timeline-img, .timeline-content').addClass('is-hidden');
+		}
+	});
+
+	//on scrolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		$timelineBlocks.each(function(){
+			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.timeline-img').hasClass('is-hidden') ) {
+				$(this).find('.timeline-img, .timeline-content').removeClass('is-hidden').addClass('bounce-in');
+			}
+		});
+	});
+});
