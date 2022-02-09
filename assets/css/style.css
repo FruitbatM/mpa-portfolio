@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@300;400;500;600&display=swap');
 
 /* Base Styles */
 html, body {
@@ -246,10 +247,9 @@ button:focus {
 
 #social-desktop {
     position:fixed;
-    top:250px;
+    top:300px;
     left: 0;
     list-style: none;
-    font-size: 20px;
 }
 
 #social-desktop a {
@@ -267,38 +267,6 @@ button:focus {
     width: 1px;
     height: 190px;
     margin: 5px;
-    background-color: slategray;
-}
-
-/* Email - right */
-#email-desktop {
-    position:fixed;
-    right:0;
-    top:220px;
-    padding-right: 20px;
-}
-
-#email-desktop a {
-    margin: 25px auto;
-    padding: 10px;
-    font-family: monospace;
-    letter-spacing: 0.1em;
-    font-size: 13px;
-    writing-mode: vertical-rl;
-    color: #8892b0;
-}
-
-#email-desktop a:hover, #email-desktop a:focus {
-    transform: translateY(-3px);
-    color: #42caca;
-}
-
-#email-desktop::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 90px;
-    margin: 0px auto;
     background-color: slategray;
 }
 
