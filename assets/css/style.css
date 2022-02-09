@@ -444,11 +444,18 @@ button.accordion-button.text-white::after {
   margin: 0 0 10px 0;
 }
 
+.timeline-company a {
+  color: #084298;
+}
+
 .timeline-para {
   font-family: 'Sans Pro', serif;
 }
 
 .timeline-content .timeline-date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7;
   font-size: 14px;
   font-size: 0.875rem;
   color: #000 !important;
@@ -577,13 +584,6 @@ button.accordion-button.text-white::after {
 .timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
-}
-
-.timeline-content .timeline-date {
-  float: left;
-  padding: .8em 0;
-  opacity: .7;
-  color: #fafafa;
 }
 
 .timeline-content::before {
@@ -733,7 +733,7 @@ button.accordion-button.text-white::after {
     margin-left: auto;
     left: 0;
     z-index: 1;
-    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 75%);
+    box-shadow: 0 5px 10px 0 #000;
 }
 
 .project-screenshots .img-md {
@@ -742,7 +742,7 @@ button.accordion-button.text-white::after {
     width: 27%;
     right: 14%;
     z-index: 2;
-    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 75%);
+    box-shadow: 0 5px 10px 0 #000;
 }
 
 .project-screenshots .img-sm {
@@ -751,7 +751,6 @@ button.accordion-button.text-white::after {
     width: 15%;
     right: 1rem;
     z-index: 3;
-    box-sizing: 0 5px 5px 0 rgb(0 0 0 / 75%);
 }
 
 .description-title-container {
@@ -796,6 +795,10 @@ button.accordion-button.text-white::after {
     font-size: 1.1em;
     color: #fafafa;
     font-family: 'Oswald';
+}
+
+.project-description a {
+  color: #fafafa;
 }
 
 .used-skills {
@@ -933,8 +936,8 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
     .timeline-icon-work {
       margin-left: 12px;
       margin-top: 12px;
+    }
 }
-
 
 /* Display on large devices */
 @media screen 
@@ -1016,6 +1019,7 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
       top: 6px;
       font-size: 16px;
       font-size: 1rem;
+      color: #fafafa !important;
     }
 
     .timeline-block:nth-child(even) .timeline-content {
