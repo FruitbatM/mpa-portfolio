@@ -185,7 +185,7 @@ button:focus {
 	position: relative;
 	opacity: 0;
 	margin-bottom: 35px;
-	font-size: 3.2em;
+	font-size: 2rem;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 20px;
@@ -442,6 +442,10 @@ button.accordion-button.text-white::after {
   color: #000;
   font-size: 15px;
   margin: 0 0 10px 0;
+}
+
+.timeline-para {
+  font-family: 'Sans Pro', serif;
 }
 
 .timeline-content .timeline-date {
@@ -903,6 +907,14 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   and (min-width : 768px) 
   and (max-width : 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    .overlay nav {
+      top: 450px;
+    }
+
+    .overlay ul li {
+      font-size: 3.4rem;
+    }
+    
     .timeline-content h2 {
       font-size: 20px;
       font-size: 1.25rem;
