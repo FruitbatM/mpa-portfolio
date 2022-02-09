@@ -247,7 +247,7 @@ button:focus {
 
 #social-desktop {
     position:fixed;
-    top:300px;
+    top:100px;
     left: 0;
     list-style: none;
 }
@@ -259,6 +259,15 @@ button:focus {
 #social-desktop a:hover, #social-desktop a:focus {
     transform: translateY(-3px);
     color: #42caca;
+}
+
+#social-desktop::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 190px;
+  margin: 5px;
+  background-color: slategray;
 }
 
 #social-desktop::after {
@@ -435,6 +444,12 @@ button.accordion-button.text-white::after {
   margin: 0 0 10px 0;
 }
 
+.timeline-content .timeline-date {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #000 !important;
+}
+
 .timeline-img {
   position: absolute;
   top: 0;
@@ -454,6 +469,11 @@ button.accordion-button.text-white::after {
   top: 50%;
   margin-left: -12px;
   margin-top: -12px;
+}
+
+.timeline-icon, .timeline-icon-work {
+  margin-left: 11px;
+  margin-top: 12px;
 }
 
 .timeline-img.cd-icon {
@@ -893,11 +913,14 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
       font-size: 1rem;
     }
 
-    .timeline-content .timeline-date {
-      font-size: 14px;
-      font-size: 0.875rem;
+    .timeline-icon {
+      margin-left: 10.5px;
+      margin-top: 12px;
     }
 
+    .timeline-icon-work {
+      margin-left: 12px;
+      margin-top: 12px;
 }
 
 
@@ -1021,6 +1044,12 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 
     .timeline-icon {
       margin-left: 10.5px;
+      margin-top: 12px;
+      font-size: 2rem;
+    }
+
+    .timeline-icon-work {
+      margin-left: 13.5px;
       margin-top: 12px;
       font-size: 2rem;
     }
