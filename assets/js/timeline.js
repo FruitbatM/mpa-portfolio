@@ -1,3 +1,5 @@
+// On hold
+/*
 jQuery(document).ready(function($){
 	let $timelineBlocks = $('.timeline-block');
 
@@ -17,3 +19,4 @@ jQuery(document).ready(function($){
 		});
 	});
 });
+*/
