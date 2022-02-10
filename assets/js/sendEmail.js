@@ -1,7 +1,7 @@
 // Send email function (adapted from Code Institute walkthrough project)
 
 function sendMail(contactForm) {
-    emailjs.send('mpa_dev', 'service_sjar68h', {
+    emailjs.send('mpa_dev', 'template_g28czrg', {
       'from_name': contactForm.fullname.value,
       'from_email': contactForm.email.value,
       'subject': contactForm.subject.value,
@@ -15,7 +15,7 @@ function sendMail(contactForm) {
             title: 'Thank you for getting in touch!',
             text: 'I will get back to you shortly.',
             icon: 'success',
-            confirmButtonColor: '#009689'
+            confirmButtonColor: '#3085d6'
           });
         },
         // Sweet Alert custom pop-up alert if fail
@@ -24,7 +24,7 @@ function sendMail(contactForm) {
             title: 'Ooops...',
             text: 'Something went wrong.',
             icon: 'error',
-            confirmButtonColor: '#009689'
+            confirmButtonColor:'#3085d6'
           });
         });
   
