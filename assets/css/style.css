@@ -40,13 +40,13 @@ h1 {
 
 h2 {
     line-height: 1;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 6.25rem;
 }
 
 h3 {
     line-height: 1;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-top: 1.5rem;
 }
 
@@ -314,6 +314,12 @@ button:focus {
     list-style: none;
 }
 
+  /* Intro section*/
+  .intro-section {
+    margin-bottom: 7rem;
+  }
+
+/* About section*/
 .resume-btn {
   color: #00b7c7;
   background-color: transparent;
@@ -934,6 +940,11 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
     .overlay ul li {
       font-size: 3.4rem;
     }
+
+    /* Intro section*/
+    .intro-section {
+      margin-bottom: 7rem;
+    }
     
     .timeline-content h2 {
       font-size: 20px;
@@ -960,8 +971,25 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 @media screen 
   and (min-width: 1024px) {
 
+    h2 {
+      line-height: 1;
+      font-size: 5rem;
+      margin-top: 6.25rem;
+    }
+  
+    h3 {
+      line-height: 1;
+      font-size: 4rem;
+      margin-top: 1.5rem;
+    }
+
     section {
       padding: 50px 70px;
+    }
+
+    /* Intro section*/
+    .intro-section {
+      margin-bottom: 0;
     }
 
     .project-screenshots .img-lg {
