@@ -314,6 +314,23 @@ button:focus {
     list-style: none;
 }
 
+.resume-btn {
+  color: #00b7c7;
+  background-color: transparent;
+  border: 0.1rem solid #00b7c7;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  line-height: 5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resume-btn:hover, .resume-btn:focus, .resume-btn:active {
+  background-color: rgba(100,255,218,0.1);
+  color: #fff;
+  outline: none;
+}
+
 /* Skills section */
 /* Accordion without border credit: https://www.bootdey.com/snippets/view/accordion-without-border#html*/
 
