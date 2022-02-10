@@ -898,6 +898,11 @@ form input {
   border: 0.12rem solid;
 }
 
+.swal2-actions {
+  background-color: #495781;
+}
+
+
 /* Footer */
 .footer-section {
   background-color: #495781;
