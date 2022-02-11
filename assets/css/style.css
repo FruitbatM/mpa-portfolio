@@ -912,6 +912,15 @@ form input {
   font-weight: 400;
 }
 
+.social-footer i {
+  font-size: 1.5rem;
+  color: #e2e2e2;
+}
+
+.social-footer i:hover, .social-footer i:focus {
+  color: #42caca;
+}
+
 /* Back to top arrow - code with small modification taken from: 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #arrow_2top {
